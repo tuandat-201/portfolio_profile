@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/*Header*/
+
+.header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  padding: 0 35rem;
+  border-bottom: 0.2rem solid #adb5bd;
+  background-color: #fff;
+}
+
+.main-logo {
+  height: 6rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  color: #868e96;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  transform: translateY(-5px);
+  color: #4dabf7;
+}
+
+/*Hero Section*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  margin: 8rem 35rem;
+  height: 80vh;
+}
+
+.introduce div {
+  overflow: hidden;
+  margin-left: 10rem;
+}
+
+.introduce h1 {
+  font-size: 12rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.introduce h2 {
+  margin-top: -5rem;
+  font-size: 16rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.introduce h1 span,
+.introduce h2 span {
+  opacity: 0;
+  display: inline-block;
+  animation: slideUp 0.75s ease-in-out forwards;
+}
+
+.introduce h1 span:first-child {
+  animation-delay: 0.5s;
+}
+
+.introduce h1 span:last-child {
+  animation-delay: 0.7s;
+}
+
+.introduce h2 span:first-child {
+  animation-delay: 0.9s;
+}
+
+.introduce h2 span:last-child {
+  animation-delay: 1.1s;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
