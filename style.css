@@ -27,6 +27,7 @@ body {
   padding: 0 35rem;
   border-bottom: 0.2rem solid #adb5bd;
   background-color: #fff;
+  z-index: 99;
 }
 
 .main-logo {
@@ -59,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   margin: 8rem 35rem;
-  height: 80vh;
+  height: 90vh;
 }
 
 .introduce div {
@@ -71,6 +72,7 @@ body {
   font-size: 12rem;
   font-style: italic;
   font-weight: 700;
+  color: #212529;
 }
 
 .introduce h2 {
@@ -78,6 +80,7 @@ body {
   font-size: 16rem;
   font-style: italic;
   font-weight: 700;
+  color: #212529;
 }
 
 .introduce h1 span,
@@ -113,3 +116,91 @@ body {
     transform: translateY(0rem);
   }
 }
+
+/* About-section */
+
+.about-section {
+  margin: 10rem 35rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-icon {
+  height: 7rem;
+}
+
+.section-title {
+  color: #343a40;
+  font-size: 3.2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 8.5rem;
+  margin: 3.5rem 0;
+}
+
+.about-story,
+.about-studied {
+  width: 50%;
+}
+
+.about-title {
+  color: #495057;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.story p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.studied-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.smaller {
+  color: #868e96;
+  font-size: 1.4rem;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+}
+
+.skill-container > div {
+  padding: 3rem;
+  border: 1px solid #ced4da;
+  border-radius: 2rem;
+}
+
+.skill-container > div > p {
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+
+.skill-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skill-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.skill-logo-box img {
+  height: 3rem;
+}
+
+/*Contact Section*/
